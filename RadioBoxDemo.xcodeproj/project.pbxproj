@@ -13,6 +13,10 @@
 		2C8BB4511FF4800800C42E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB4501FF4800800C42E7E /* Assets.xcassets */; };
 		2C8BB4541FF4800800C42E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB4521FF4800800C42E7E /* LaunchScreen.storyboard */; };
 		2C8BB4571FF4800800C42E7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB4561FF4800800C42E7E /* main.m */; };
+		2C8BB4621FF48E1700C42E7E /* RadioBoxFun.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BB4611FF48E1700C42E7E /* RadioBoxFun.m */; };
+		2C8BB4651FF48FB300C42E7E /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB4631FF48FB300C42E7E /* unchecked.png */; };
+		2C8BB4661FF48FB300C42E7E /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C8BB4641FF48FB300C42E7E /* checked.png */; };
+		2CD0709320245D51003C74E7 /* UIButton+TTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0709220245D51003C74E7 /* UIButton+TTButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		2C8BB4531FF4800800C42E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8BB4551FF4800800C42E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8BB4561FF4800800C42E7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C8BB4601FF48E1700C42E7E /* RadioBoxFun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioBoxFun.h; sourceTree = "<group>"; };
+		2C8BB4611FF48E1700C42E7E /* RadioBoxFun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioBoxFun.m; sourceTree = "<group>"; };
+		2C8BB4631FF48FB300C42E7E /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		2C8BB4641FF48FB300C42E7E /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		2CD0709120245D51003C74E7 /* UIButton+TTButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TTButton.h"; sourceTree = "<group>"; };
+		2CD0709220245D51003C74E7 /* UIButton+TTButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TTButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,16 @@
 		2C8BB4461FF4800800C42E7E /* RadioBoxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2C8BB4641FF48FB300C42E7E /* checked.png */,
+				2C8BB4631FF48FB300C42E7E /* unchecked.png */,
 				2C8BB4471FF4800800C42E7E /* AppDelegate.h */,
 				2C8BB4481FF4800800C42E7E /* AppDelegate.m */,
 				2C8BB44A1FF4800800C42E7E /* ViewController.h */,
 				2C8BB44B1FF4800800C42E7E /* ViewController.m */,
+				2C8BB4601FF48E1700C42E7E /* RadioBoxFun.h */,
+				2C8BB4611FF48E1700C42E7E /* RadioBoxFun.m */,
+				2CD0709120245D51003C74E7 /* UIButton+TTButton.h */,
+				2CD0709220245D51003C74E7 /* UIButton+TTButton.m */,
 				2C8BB44D1FF4800800C42E7E /* Main.storyboard */,
 				2C8BB4501FF4800800C42E7E /* Assets.xcassets */,
 				2C8BB4521FF4800800C42E7E /* LaunchScreen.storyboard */,
@@ -129,8 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8BB4661FF48FB300C42E7E /* checked.png in Resources */,
 				2C8BB4541FF4800800C42E7E /* LaunchScreen.storyboard in Resources */,
 				2C8BB4511FF4800800C42E7E /* Assets.xcassets in Resources */,
+				2C8BB4651FF48FB300C42E7E /* unchecked.png in Resources */,
 				2C8BB44F1FF4800800C42E7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8BB4621FF48E1700C42E7E /* RadioBoxFun.m in Sources */,
+				2CD0709320245D51003C74E7 /* UIButton+TTButton.m in Sources */,
 				2C8BB44C1FF4800800C42E7E /* ViewController.m in Sources */,
 				2C8BB4571FF4800800C42E7E /* main.m in Sources */,
 				2C8BB4491FF4800800C42E7E /* AppDelegate.m in Sources */,
@@ -279,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U653Q9Q3XP;
 				INFOPLIST_FILE = RadioBoxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxl.test.RadioBoxDemo;
@@ -292,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U653Q9Q3XP;
 				INFOPLIST_FILE = RadioBoxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lxl.test.RadioBoxDemo;
