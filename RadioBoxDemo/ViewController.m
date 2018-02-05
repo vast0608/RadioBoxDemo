@@ -40,7 +40,7 @@
     UIButton *btn02 =  [radioBox0 creatButton:CGRectMake((WIDTH-50-32)/3*2+16, 140, (WIDTH-50-32)/3-5, 22) title:@"0已注册"];
     UIButton *btn03 =  [radioBox0 creatButton:CGRectMake(16, 140+22+10, (WIDTH-50-32)/3-5, 22) title:@"0待联系"];
     UIButton *btn04 =  [radioBox0 creatButton:CGRectMake((WIDTH-50-32)/3+16, 140+22+10, (WIDTH-50-32)/3-5, 22) title:@"0无效"];
-    [radioBox0 radioBoxButtons:@[btn00,btn01,btn02,btn03,btn04]  superView:self.view defultSelectedInde:1 callBack:^(NSInteger selectIndex, NSString *title) {
+    [radioBox0 radioBoxButtons:@[btn00,btn01,btn02,btn03,btn04]  superView:self.view defultSelectedInde:100 callBack:^(NSInteger selectIndex, NSString *title) {
         NSLog(@"%ld-----%@",(long)selectIndex,title);
     }];
 }
